@@ -89,7 +89,19 @@ button {
   margin-right: 50px;
 }
 .nav__link {
-  padding: 5px 0;
+  padding: 32px 0;
+  position: relative;
+}
+.nav__link--current::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 .nav__link:hover,
 .nav__link:focus {
